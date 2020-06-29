@@ -42,7 +42,6 @@ class BurgerBuilder extends Component{
     }
 
     addIngredientHandler = (type) =>{
-        console.log(type)
         const oldCount = this.state.ingredients[type];
         const updateCount = oldCount + 1;
         const updateIngredients ={
@@ -57,7 +56,6 @@ class BurgerBuilder extends Component{
     }
 
     removeIngredientHandler = (type)=>{
-        console.log(type)
         const oldCount = this.state.ingredients[type];
         
         if(oldCount <= 0){
